@@ -1,6 +1,9 @@
 name: Node CI
 
-on: [push]
+push:
+    branches:
+      - main
+      - 'releases/**'
 
 jobs:
   build:
